@@ -1,38 +1,157 @@
-.App {
+@font-face {
+  font-family: "Futura";
+  src: url("./ressources/fonts/futura.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Futura-oblique";
+  src: url("./ressources/fonts/futura-oblique.woff2") format("woff2");
+}
+
+body {
+  font-family: "Futura";
+}
+
+/* ================================================================= */
+/* HEADER */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  font-size: 20px;
+  border-bottom: 2px grey solid;
+}
+.logoHeader {
+  height: 30px;
+}
+
+.logoRow {
+  display: flex;
+}
+
+/* SECTION 1 */
+.headerSec1 {
+  display: flex;
+}
+
+.spHeSec1 {
+  margin-left: 36px;
+  cursor: pointer;
+}
+.spHeSec1F {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.spHeSec1Pink {
+  color: #ff764d;
+}
+/* SECTION 1 */
+
+/* SECTION 2 */
+
+.headerSec2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.spHeSec2F {
+  color: #0000ff;
+  cursor: pointer;
+}
+.spHeSec2L {
+  margin-left: 70px;
+  font-size: 16px;
+  margin-top: 4px;
+  cursor: pointer;
+}
+/* SECTION 2 */
+
+/* HEADER */
+/* ================================================================= */
+
+/* ================================================================= */
+/* HEADERBOTTOM */
+
+.headerBottom {
+  padding: 20px;
+  display: flex;
+}
+
+.spHeB {
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.spHeBPink {
+  color: #ff764d;
+}
+
+/* HEADERBOTTOM */
+/* ================================================================= */
+
+/* ================================================================= */
+/* MAIN */
+
+.mainImg {
+  width: 80%;
+  margin: 0 auto;
+}
+.imgMain {
+  height: 620px;
+  width: 1134px;
+  object-fit: cover;
+}
+
+.parMain {
+  font-size: 30px;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px;
+  margin-top: 80px;
+}
+
+.mainSpecialCase {
+  color: #0000ff;
+}
+
+.mainPart2 {
+  font-size: 20px;
+  font-weight: 100;
+  margin-top: 30px;
+}
+
+/* MAIN */
+/* ================================================================= */
+
+/* ================================================================= */
+/* FOOTER */
+.footer {
+  padding: 30px;
+  border-top: 2px grey solid;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* FOOTER */
+/* ================================================================= */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* ================================================================= */
+/* MEDIA QUERIES */
+@media (min-width: 0px) and (max-width: 846px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .logoHeader {
+    display: none;
+  }
+
+  /* SECTION 1 */
+  .headerSec1 {
+    flex-direction: column;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* MEDIA QUERIES */
+/* ================================================================= */
